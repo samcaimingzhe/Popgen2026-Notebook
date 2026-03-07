@@ -102,6 +102,7 @@ f_A(1) = \frac{f_A^2 + (1-s)f_Af_a}
 {1 - 2sf_a}
 $$
 
+The new A allele frequency changes will be:
 $$
 \begin{aligned}
 \Delta f_A &= f_A(1) - f_A(0) \\
@@ -109,8 +110,15 @@ $$
 &= f_A(\frac{1 - sf_a}{1 - 2sf_a}- 1) \\
 &= f_A(\frac{1 - sf_a - 1 + 2sf_a}{1 - 2sf_a}) \\
 &= f_A(\frac{sf_a}{1 - 2sf_a}) \\
-&= \frac{sf_Af_a}{1 - 2sf_a}
+&= \frac{sf_Af_a}{1 - 2sf_a} \\
+&= \frac{sf_A(1-f_A)}{1 - 2s(1-f_A)}
 \end{aligned}
+$$
+
+When $s$ is extremely small, which means weak selection:
+
+$$
+\lim_{s \to 0} \Delta f_A = sf_A(1-f_A)
 $$
 
 
